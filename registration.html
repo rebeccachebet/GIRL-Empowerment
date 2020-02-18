@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <title>Vines & Peach Girls Holiday Program Registration</title>
+    <style>
+        .mainform {
+            margin-left: 20px;
+            background-color:  rgb(252, 189, 252);
+            margin-right: 100px;
+            width: 800px;
+            padding-right: 10px;
+            padding-top: 15px;
+            height:700px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        body {
+            background-image: url(girls.jpg);
+            background-size: fixed;
+            background-attachment: initial;
+        }
+
+        input {
+            
+            border: 1px solid purple;
+
+        }
+
+        h3,
+        h1 {
+            margin-left: 30px;
+            /* margin-right: 20px; */
+        }
+
+        /* -------------------------- starts here ------------------------*/
+        .element {
+            margin-left: 30px;
+            padding: 2.5% 0%;
+
+        }
+
+        .element span {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .element label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        /* ------------------ ends here----------------------*/
+        select {
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .container {
+            background-color:  rgb(250, 178, 250);
+        }
+
+        button {
+            color: purple;
+            size: 40px;
+            margin-left: -74px;
+            width: 100px;
+            height: 46px;
+            padding-top: 0.5%;
+            
+        }
+    </style>
+</head>
+
+<body onload="document.registration.userId.focus();">
+
+    <div class="mainform">
+        <h1>Please Register Here</h1>
+        <form name="registration">
+            <form action="">
+                <div class="container">
+
+                        <fieldset>
+
+                                <legend>Vines & Peach Girls Holiday Program Registration</legend>
+                                    <div class="element"> <span><label> Child's Name: </label></span> <input
+                                            type="text" id="userIdVal" name="userId"></div>
+                                    <div class="element"> <span><label> Parents'/Guardians' Name: </label></span>
+                                        <input type="text" id="name" name="uname">
+                                    </div>
+                                    <div class="element"> <span> <label>Contact: </label> </span> <input
+                                            type="password" id="password">
+                                    </div>
+                                    <div class="element"> <span> <label>Emergency Contact: </label> </span> <input
+                                            type="text">
+                                    </div>
+                              
+                            
+
+                            <div class="element"> <span><label>Child's Date of Birth: </label></span> <input type="date"
+                                    id="cmail"></div>
+                                </fieldset>
+                            
+                            <fieldset><legend>Any Other Information:</legend>
+                            
+                                <div>Parents' or Guardians Information<input type="text" placeholder="Parents' or Guardians Information"></div>
+                            
+                                <div>Child's Medical Information:<input type="text" placeholder="Child's Medical Information"></div>
+                            
+
+                        </fieldset>
+
+
+                    <div class="element"><span><label></label></span><button type="button"
+                            Register ></button></div>
+                            <form action="#">
+                                
+                              
+                            
+
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </form>
+    </div>
+    </form>
+    <script src='validation.js'></script>
+    <script src="reset.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <title></title>
+    <style>
+        .mainform {
+            margin-left: 20px;
+            background-color:  rgb(255, 213, 255);
+            margin-right: 50px;
+            width: 800px;
+            padding-right: 2px;
+            padding-top: 2px;
+        }
+
+        body {
+            background-image: url(power.jpg);
+            background-size: cover;
+            background-attachment: initial;
+        }
+
+        
+
+        h3,
+        h1 {
+            margin-left: 30px;
+            /* margin-right: 20px; */
+        }
+
+        /* -------------------------- starts here ------------------------*/
+        .element {
+            margin-left: 30px;
+            padding: 2.5% 0%;
+
+        }
+
+        .element span {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .element label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        /* ------------------ ends here----------------------*/
+        select {
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .container {
+            background-color: rgb(252, 189, 252);
+        }
+
+        button {
+            color: purple;
+            size: 30px;
+            margin-left: -74px;
+            width: 100px;
+            height: 46px;
+            padding-top: 0.5%;
+        }
+        .logoutLblPos{
+
+            position:fixed;
+            right:10px;
+            top:5px;
+}
+    </style>
+</head>
+
+<body onload="document.registration.userId.focus();">
+
+    <div class="mainform">
+        <h1>Please Login Here</h1>
+        <form name="loginform">
+            <form action="">
+                <div class="container">
+
+                    <div class="element"> <span><label> User Name: </label></span> <input type="text" id="userIdVal"
+                            name="userId" placeholder="This can be your user name or your email. " required="Please check your username/email"></div>
+                    
+                    <div class="element"> <span> <label>Password: </label> </span> <input type="password" id="password" required="Password is required">
+                   
+                    
+
+                    <div class="element"><span><label></label></span><button type="button"
+                            onclick="return +formValidation();"> <a href="">Login</a> </button></div>
+                
+                            <form align="left" name="form1" method="post" action="log_out.php">
+                                    <label class="logoutLblPos">
+                                    <input name="submit2" type="submit" id="submit2" value="log out">
+                                    </label>
+                                  </form>
+
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </form>
+    </div>
+    </form>
+  
+</body>
+
+</html>
